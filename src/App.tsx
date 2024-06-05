@@ -9,13 +9,14 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
     </div>
   );
+  // bg-red-900 sm:bg-yellow-400 md:bg-blue-400 lg:bg-teal-400 xl:bg-lime-400
 }
 
 export default App;
