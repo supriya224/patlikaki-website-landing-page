@@ -79,7 +79,7 @@ function HomePage() {
             </button>
           </div>
           <div className="w-full flex justify-center  ">
-            <div className=" w-[250px] h-[250px] bg-gradient-to-b from-[#bc8ef1] to-[#f5bbaa] absolute rounded-full top-[70%] left-[4%]  sm:top-[20%] sm:left-[40%]   lg:top-[15%] lg:left-[55%]  xl:top-[15%] xl:left-[55%] translate-x-[50%] translate-y-[50%] blur-[60px] hover:transform hover:scale-100 hover:bg-yellow-300" />
+            <div className=" w-[250px] h-[250px] bg-gradient-to-b from-[#bc8ef1] to-[#f5bbaa] absolute rounded-full top-[55%] left-[-20%]  sm:top-[20%] sm:left-[40%]   lg:top-[15%] lg:left-[55%]  xl:top-[15%] xl:left-[55%] translate-x-[50%] translate-y-[50%] blur-[60px] hover:transform hover:scale-100 hover:bg-yellow-300" />
             <img
               src={Img}
               alt=""
