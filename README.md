@@ -21,3 +21,6 @@ To get started with CleverBook Inventory Management, follow these steps:
 2. cd cleverbook-inventory
 3. yarn install
 4. yarn start   
+
+## screenshot
+<img width="1440" alt="Screenshot 2024-06-06 at 8 24 04 PM" src="https://github.com/supriya224/patlikaki-website-landing-page/assets/52038704/86b686ca-7ca0-4b16-943d-3c0711a07ef9">
