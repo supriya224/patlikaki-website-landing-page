@@ -6,16 +6,16 @@ import Img from "../../../assets/img.png";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex items-end w-full   ">
-      <footer className="w-full text-gray-700  border body-font">
-        <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 xl:grid-cols-4 px-5 py-24 mx-auto md:grid-cols-2 ">
+    <div className="flex items-end w-full ">
+      <footer className="w-full text-gray-700 body-font">
+        <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 xl:grid-cols-4 px-5 py-12 mx-auto md:grid-cols-2 ">
           <div className="px-4  md:text-left">
             <img src={Img} alt="" className="w-28 h-28" />
-            <p className="mt-2 text-sm text-gray-500">
-              Crest is an AI-powered supply chain software that provides
-              companies tools for demand forecasting, inventory planning and
-              more. This helps them have the right amount of stock, optimise
-              space and fulfil every order.
+            <p className="mt-2 text-sm text-gray-500 hover:text-zinc-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              modi dolor tenetur eos rerum voluptatum mollitia harum dicta atque
+              architecto vel eveniet soluta temporibus, explicabo sed autem.
+              Molestias, est veniam.
             </p>
           </div>
           <div className="w-full px-4 ">
@@ -24,12 +24,12 @@ const Footer: React.FC = () => {
             </h2>
             <nav className="mb-10 list-none">
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                <a className="text-gray-500 cursor-pointer hover:text-zinc-300">
                   Product
                 </a>
               </li>
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                <a className="text-gray-500 cursor-pointer hover:text-zinc-300">
                   Pricing
                 </a>
               </li>
@@ -51,12 +51,12 @@ const Footer: React.FC = () => {
             </h2>
             <nav className="mb-10 list-none">
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-400">
+                <a className="text-gray-500 cursor-pointer hover:text-zinc-300">
                   About us
                 </a>
               </li>
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                <a className="text-gray-500 cursor-pointer hover:text-zinc-300">
                   Blog
                 </a>
               </li>
@@ -68,18 +68,18 @@ const Footer: React.FC = () => {
             </h2>
             <nav className="mb-10 list-none">
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                <a className="text-gray-500 cursor-pointer hover:text-zinc-300">
                   sales@getcrest.ai
                 </a>
               </li>
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                <a className="text-gray-500 cursor-pointer hover:text-zinc-300">
                   Registered Office: 1507, Incubex, 11th cross road, 19th Main
                   Road, Bengaluru, India. 560102
                 </a>
               </li>
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                <a className="text-gray-500 cursor-pointer hover:text-zinc-300">
                   Corporate Office: 291, All Time Space, 4th Floor, 15th A
                   Cross, Sector - 6, HSR Layout, Bengaluru, India. 560102
                 </a>
@@ -142,8 +142,8 @@ const Footer: React.FC = () => {
             </nav>
           </div>
         </div>
-        <div className="bg-[#5c5067]">
-          <div className="container px-5 py-4 mx-auto">
+        <div className="bg-[#2f2737]">
+          <div className="container px-5 py-2 mx-auto">
             <p className="text-sm text-[#ac94c3] capitalize xl:text-center">
               © 2020 All rights reserved
             </p>

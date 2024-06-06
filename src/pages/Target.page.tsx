@@ -16,23 +16,25 @@ const TargetPage: React.FC<TabsProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="w-full max-w-md mx-auto">
-      <div className="flex border-b border-gray-200">
-        {tabs.map((tab, index) => (
-          <button
-            key={index}
-            className={`px-4 py-2 -mb-px focus:outline-none ${
-              index === activeTab
-                ? "border-b-2 border-blue-500 text-blue-500"
-                : "border-transparent text-gray-500"
-            }`}
-            onClick={() => setActiveTab(index)}>
-            {tab.label}
-          </button>
-        ))}
+    <section className="container mx-auto my-12">
+      <div className="w-full min-h-fit p-12  rounded-2xl shadow-xl shadow-[#5e457d] ">
+        <div className="flex justify-center gap-12 items-center border-b border-gray-200">
+          {tabs.map((tab, index) => (
+            <button
+              key={index}
+              className={`px-4 py-2  gap-4  focus:outline-none ${
+                index === activeTab
+                  ? "border-b-2 bg-pink-300 text-2xl font-bold rounded-lg transition-all scale-110 ease-in-out duration-300 border-white text-white"
+                  : "border-transparent font-semibold text-xl text-gray-200"
+              }`}
+              onClick={() => setActiveTab(index)}>
+              {tab.label}
+            </button>
+          ))}
+        </div>
+        <div className="p-4 my-12 text-xl">{tabs[activeTab].content}</div>
       </div>
-      <div className="p-4">{tabs[activeTab].content}</div>
-    </div>
+    </section>
   );
 };
 

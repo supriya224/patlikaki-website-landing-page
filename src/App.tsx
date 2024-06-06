@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { FeaturesPage, HomePage, ReviewPage, TargetPage } from "./pages";
+import {HomePage, ReviewPage, TargetPage } from "./pages";
 import Header from "./components/shared/header/header";
 import Footer from "./components/shared/footer/footer";
 
@@ -10,7 +10,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/features" element={<FeaturesPage />} />
+          {/* <Route path="/features" element={<FeaturesPage />} /> */}
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/target" element={<TargetPage tabs={[]} />} />
         </Routes>

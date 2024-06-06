@@ -1,16 +1,73 @@
-/* eslint-disable import/no-named-as-default */
 import React from "react";
 import Cta from "../components/core/cta";
 import Img from "../assets/hero.png";
 import TargetPage from "./Target.page";
-// import { Target } from "react-feather";
+import ReviewPage from "./Review.page";
+import AboutPage from "./About.page";
 // import FeaturesPage from "./Features.page";
+import ProblemPage from "./Problem.page";
 
 function HomePage() {
+  // tabs in target page
   const tabs = [
-    { label: 'Tab 1', content: <div>Content of Tab 1</div> },
-    { label: 'Tab 2', content: <div>Content of Tab 2</div> },
-    { label: 'Tab 3', content: <div>Content of Tab 3</div> },
+    {
+      label: "Tab 1",
+      content: (
+        <div>
+          <span>Inventory Control:</span> Inventory control handles products
+          that are already in stock at the warehouse and plays a key role in
+          supply chain management. Inventory control tools can categorize
+          products by type, location and SKU (or serial number), audit data,
+          generate reports in real-time and search, filter and view products.
+          For more on inventory control methods, including expert advice, see
+          our “Essential Guide to Inventory Control.”
+        </div>
+      )
+    },
+    {
+      label: "Tab 2",
+      content: (
+        <div>
+          <span>Inventory Alerts:</span> Various modules trigger inventory
+          alerts that help reduce waste, optimize inventory financials and
+          manage customer expectations. These features include automated email
+          or SMS messages that alert you to low inventory levels and shipment
+          and supply chain delays. Inventory alerts offer an added level of
+          operational control for sales forecasting, materials planning,
+          shipping logistics and supplier management.
+        </div>
+      )
+    },
+    {
+      label: "Tab 3",
+      content: (
+        <div>
+          <span>Inventory Optimization:</span> Take inventory planning to a
+          higher level with inventory optimization. Add sophistication to a
+          basic inventory plan. Instead of standard ordering formulas and a
+          basic ordering process, you can use tools that provide automated
+          reports, inventory trends and a view of changes across the entire
+          supply chain. This information enables a closer match in supply and
+          demand so you can optimize the inventory on-hand. See the inventory
+          forecasting guide to learn more.
+        </div>
+      )
+    },
+    {
+      label: "Tab 3",
+      content: (
+        <div>
+          <span>Inventory Optimization:</span> Take inventory planning to a
+          higher level with inventory optimization. Add sophistication to a
+          basic inventory plan. Instead of standard ordering formulas and a
+          basic ordering process, you can use tools that provide automated
+          reports, inventory trends and a view of changes across the entire
+          supply chain. This information enables a closer match in supply and
+          demand so you can optimize the inventory on-hand. See the inventory
+          forecasting guide to learn more.
+        </div>
+      )
+    }
   ];
 
   // bg-red-900 sm:bg-yellow-400 md:bg-blue-400 lg:bg-teal-400 xl:bg-lime-400
@@ -43,7 +100,10 @@ function HomePage() {
           </div>
         </div>
       </section>
+      <ProblemPage />
       {/* <FeaturesPage /> */}
+      <AboutPage />
+      <ReviewPage />
       <TargetPage tabs={tabs} />
       <Cta />
     </div>
