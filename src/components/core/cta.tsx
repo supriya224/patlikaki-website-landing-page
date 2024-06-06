@@ -1,12 +1,11 @@
-
 function Cta() {
   return (
     <div>
       <div className="flex items-center justify-center ">
         <div className="w-full">
-          <div className=" rounded-xl m-16 shadow-inner shadow-[#2e2538] border-b">
-            <div className="flex flex-col p-10 py-24  px-16 space-y-6 items-center text-center">
-              <h1 className="font-light md:text-6xl text-5xl text-white tracking-wide ">
+          <div className=" rounded-xl m-5 sm:m-16 shadow-inner shadow-[#2e2538] border-b">
+            <div className="flex flex-col p-10 py-24  px-5 sm:px-16 space-y-6  items-center text-center">
+              <h1 className="font-light md:text-6xl text-3xl text-white tracking-wide ">
                 Streamline your
                 <span
                   id="spin"
@@ -20,7 +19,7 @@ function Cta() {
               </p>
               <button
                 type="button"
-                className="rounded-full bg-purple-300 bg-gradient-to-t  from-[#f5bbaa]   shadow-lg shadow-[#4f395f] text-white text-lg py-4 px-6">
+                className="rounded-lg px-3  w-fit bg-purple-300 py-2 bg-gradient-to-t  from-[#f5bbaa]   shadow-lg shadow-[#4f395f] text-white sm:rounded-full  md:text-lg sm::py-4 sm:px-6">
                 Start Your Free Trial Now!
               </button>
             </div>

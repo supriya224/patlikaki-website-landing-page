@@ -55,19 +55,16 @@ function HomePage() {
     }
   ];
 
-  // bg-red-900 sm:bg-yellow-400 md:bg-blue-400 lg:bg-teal-400 xl:bg-lime-400
   return (
-    <div className="text-white">
+    <div className="text-white ">
       <section className="w-full min-h-[100vh] container mx-auto flex justify-center items-center ">
         <div className="px-12 h-fit w-full flex flex-col items-center justify-center sm:flex-row gap-7 ">
           <div className="w-full justify-center items-center ">
-            <h3 className="text-7xl pb-5">
+            <h3 className="text-3xl sm:text-7xl pb-5">
               Every order fulfilled,{" "}
-              <span className="text-transparent font-normal bg-clip-text bg-gradient-to-r from-[#bc8ef1] via-[#442463] to-[#cc9cfc]">
-                on time .
+              <span className="text-transparent font-normal bg-clip-text bg-purple-300 bg-gradient-to-t  from-[#f5bbaa] ">
+                on time.
               </span>{" "}
-              {/* <div className=" w-[250px] h-[250px] bg-gradient-to-b from-[#bc8ef1] via-[#442463] to-[#cc9cfc] rounded-full absolute z-0 top-[160%] sm:top-[10%] sm:left-[5%] translate-x-[3%] translate-y-[1%] scale-95 ease-in duration-300 md:top-[-10%] md:left-[1%] xl:top-[10%] xl:eft-[90%] xl:translate-x-[50%] xl:translate-y-[50%] blur-[60px]" /> */}
-              {/* <div className=" w-[250px] h-[250px] bg-gradient-to-b from-[#bc8ef1] via-[#442463] to-[#cc9cfc] rounded-full absolute z-0 top-[160%] sm:top-[10%] sm:left-[5%] translate-x-[3%] translate-y-[1%] scale-95 ease-in duration-300 md:top-[-10%] md:left-[1%] xl:top-[10%] xl:eft-[90%] xl:translate-x-[50%] xl:translate-y-[50%] blur-[60px]" /> */}
             </h3>
             <p className="text-md">
               Eliminate overstocking and under-stocking with Crest. Built by
@@ -82,7 +79,7 @@ function HomePage() {
             </button>
           </div>
           <div className="w-full flex justify-center  ">
-            <div className=" w-[250px] h-[250px] bg-gradient-to-b from-[#bc8ef1] to-[#f5bbaa] absolute rounded-full top-[10%] eft-[10%] translate-x-[50%] translate-y-[50%] blur-[60px] hover:transform hover:scale-100 hover:bg-yellow-300" />
+            <div className=" w-[250px] h-[250px] bg-gradient-to-b from-[#bc8ef1] to-[#f5bbaa] absolute rounded-full top-[70%] left-[4%]  sm:top-[20%] sm:left-[40%]   lg:top-[15%] lg:left-[55%]  xl:top-[15%] xl:left-[55%] translate-x-[50%] translate-y-[50%] blur-[60px] hover:transform hover:scale-100 hover:bg-yellow-300" />
             <img
               src={Img}
               alt=""
@@ -100,6 +97,7 @@ function HomePage() {
       <ProblemPage />
       {/* tabs page */}
       <TargetPage tabs={tabs} />
+      {/* cta */}
       <Cta />
     </div>
   );
