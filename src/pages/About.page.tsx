@@ -34,7 +34,7 @@ const AboutPage: React.FC = () => {
               </p>
               <a
                 href="/ "
-                className="mt-6 inline-block w-full rounded-md border border-transparent bg-black  px-8 py-3 font-medium text-white hover:bg-cyan-800 sm:w-auto">
+                className="mt-6 inline-block w-full rounded-md border border-transparent bg-black  px-8 py-3 font-medium text-white hover:bg-[#442463] sm:w-auto">
                 Get access to our one-time sale
               </a>
             </div>

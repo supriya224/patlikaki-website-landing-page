@@ -24,7 +24,7 @@ const TargetPage: React.FC<TabsProps> = ({ tabs }) => {
               key={index}
               className={`px-4 py-2  gap-4  focus:outline-none ${
                 index === activeTab
-                  ? "mb-3 bg-purple-300 bg-gradient-to-t  via-[#f5bbaa] from-[#9376af]  text-2xl font-bold rounded-lg transition-all scale-110 ease-in-out duration-300  text-white"
+                  ? "mb-3 bg-purple-300 bg-gradient-to-t  from-[#f5bbaa]  text-2xl font-bold rounded-lg transition-all scale-110 ease-in-out duration-300  text-white"
                   : "border-transparent font-semibold text-xl text-gray-200"
               }`}
               onClick={() => setActiveTab(index)}>

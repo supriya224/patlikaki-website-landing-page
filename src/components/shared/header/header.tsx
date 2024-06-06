@@ -31,9 +31,9 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="text-white bg-zinc-800">
+    <header className="text-white ">
       <div className="container mx-auto flex justify-between text-center items-center p-3">
-        <img src={Img} alt="" className="w-12 h-12" />
+        <img src={Img} alt="" className="w-16 h-16" />
 
         <div className="hidden lg:flex gap-4 text-md">
           {header.map((item, index) => (
