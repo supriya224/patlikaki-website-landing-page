@@ -13,6 +13,7 @@ const AboutPage: React.FC = () => {
                 src="https://visioniot.com/images/shelf-first.png"
                 alt=""
                 className="h-full w-full object-cover object-center"
+                loading="lazy"
               />
             </div>
             <div className="absolute inset-0 bg-[#442463] bg-opacity-75" />
@@ -26,9 +27,9 @@ const AboutPage: React.FC = () => {
               <h2
                 id="sale-heading"
                 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-                Get 25% off during our one-time sale
+                Key Issues Targeted by GetCrest.ai
               </h2>
-              <p className="mx-auto mt-4 max-w-xl text-xl text-gray-600">
+              <p className="mx-auto mt-4 max-w-xl text-xl text-gray-200">
                 Most of our products are limited releases that won't come back.
                 Get your favorite items while they're in stock.
               </p>
@@ -63,13 +64,14 @@ const AboutPage: React.FC = () => {
                       fill="currentColor"
                     />
                   </svg>
+                  Inventory Inaccuracy
                   <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
                     <p className="text-lg text-gray-600">
-                      My order arrived super quickly. The product is even better
-                      than I hoped it would be. Very happy customer over here!
+                      Real-time tracking and automated updates ensure your
+                      inventory records are always precise.
                     </p>
                     <cite className="mt-4 block font-semibold not-italic text-gray-900">
-                      Shehab , England
+                      View more
                     </cite>
                   </div>
                 </blockquote>
@@ -85,14 +87,15 @@ const AboutPage: React.FC = () => {
                       fill="currentColor"
                     />
                   </svg>
+                  <span>Stockouts and Overstock</span>
                   <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
                     <p className="text-lg text-gray-600">
-                      I had to return a purchase that didn’t fit. The whole
-                      process was so simple that I ended up ordering two new
-                      items!
+                      Advanced analytics predict demand, helping you maintain
+                      optimal stock levels and avoid costly stockouts or excess
+                      inventory.
                     </p>
                     <cite className="mt-4 block font-semibold not-italic text-gray-900">
-                      Najib, malaysia
+                      View more
                     </cite>
                   </div>
                 </blockquote>
@@ -108,14 +111,15 @@ const AboutPage: React.FC = () => {
                       fill="currentColor"
                     />
                   </svg>
+                  <span>Lack of Visibility</span>
                   <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
                     <p className="text-lg text-gray-600">
-                      Now that I’m on holiday for the summer, I’ll probably
-                      order a few more shirts. It’s just so convenient, and I
-                      know the quality will always be there.
+                      Comprehensive dashboards and reporting provide full
+                      visibility into your inventory, empowering better
+                      decision-making.
                     </p>
                     <cite className="mt-4 block font-semibold not-italic text-gray-900">
-                      Yousef, New York
+                      View more
                     </cite>
                   </div>
                 </blockquote>
