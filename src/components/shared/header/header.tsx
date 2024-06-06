@@ -48,12 +48,12 @@ const Header: React.FC = () => {
         <div className="flex items-center text-white gap-5">
           <button
             //  onClick={scrollToTop}
-            className=" font-normal  bg-gradient-to-t from-[#f1bafc] via-[#f4b194] to-indigo-700 p-3 rounded-lg "
+            className=" font-normal  bg-purple-300 bg-gradient-to-b  from-[#f5bbaa]  p-3 rounded-lg "
             type="button">
             Login
           </button>
           <button
-            className=" font-normal  bg-gradient-to-t from-[#321438]  to-purple-300 p-3 rounded-lg "
+            className=" font-normal bg-purple-300 bg-gradient-to-b  from-[#f5bbaa]   p-3 rounded-lg "
             type="button">
             Signup
           </button>

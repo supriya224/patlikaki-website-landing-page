@@ -6,8 +6,8 @@ function ReviewPage() {
   return (
     <div>
       <section>
-        <div className="bg-[#151214] text-white py-20">
-          <div className="container mx-auto flex flex-col md:flex-row my-6 md:my-24">
+        <div className=" text-white py-1">
+          <div className="container mx-auto  flex flex-col md:flex-row my-2 md:my-2 shadow-inner ">
             <div className="flex flex-col w-full lg:w-1/3 p-8">
               <p className="ml-6 text-purple-800 text-lg uppercase tracking-loose">
                 REVIEW
@@ -24,7 +24,7 @@ function ReviewPage() {
               <div className="container w-full px-4">
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full lg:w-6/12 px-4">
-                    <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                    <div className="relative flex flex-col min-w-0 break-words w-full my-6 shadow-lg rounded-lg bg-white">
                       <div className="flex-auto p-5 lg:p-10">
                         <h4 className="text-2xl mb-4 text-black font-semibold">
                           Have a suggestion?
@@ -53,8 +53,8 @@ function ReviewPage() {
                               Message
                             </label>
                             <textarea
-                            maxLength={300}
-                            rows={4}
+                              maxLength={300}
+                              rows={4}
                               // maxLength="300"
                               name="feedback"
                               id="feedback"
@@ -67,7 +67,7 @@ function ReviewPage() {
                           <div className="text-center mt-6">
                             <button
                               id="feedbackBtn"
-                              className="bg-[#7a678c] text-black text-center mx-auto active:bg-yellow-400 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                              className="bg-purple-300 bg-gradient-to-t  via-[#f5bbaa] from-[#9376af]  text-white text-center mx-auto active:bg-yellow-400 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                               type="submit">
                               Submit
                             </button>

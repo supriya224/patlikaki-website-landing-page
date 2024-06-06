@@ -4,8 +4,8 @@ function Cta() {
   return (
     <div>
       <div className="flex items-center justify-center ">
-        <div className="w-full bg-[#1c1522] ">
-          <div className="bg-[#130a1a]  rounded-xl m-16 border  shadow-xl shadow-[#5c5067]">
+        <div className="w-full ">
+          <div className="bg-[#130a1a]  rounded-xl m-16 shadow-inner shadow-[#2e2538]">
             <div className="flex flex-col p-10  px-16 space-y-6 items-center text-center">
               <h1 className="font-light md:text-6xl text-5xl text-white tracking-wide ">
                 Special Offer on{" "}
@@ -23,7 +23,7 @@ function Cta() {
               </p>
               <button
                 type="button"
-                className="rounded-full bg-[#361d49] shadow-lg shadow-[#4f395f] text-white text-lg py-4 px-6">
+                className="rounded-full bg-purple-300 bg-gradient-to-t  via-[#f5bbaa] from-[#9376af]  shadow-lg shadow-[#4f395f] text-white text-lg py-4 px-6">
                 Shop Now
               </button>
             </div>

@@ -1,11 +1,9 @@
-import React from "react";
 import Cta from "../components/core/cta";
 import Img from "../assets/hero.png";
 import TargetPage from "./Target.page";
 import ReviewPage from "./Review.page";
-import AboutPage from "./About.page";
-// import FeaturesPage from "./Features.page";
 import ProblemPage from "./Problem.page";
+import AboutPage from "./About.page";
 
 function HomePage() {
   // tabs in target page
@@ -52,30 +50,15 @@ function HomePage() {
           forecasting guide to learn more.
         </div>
       )
-    },
-    {
-      label: "Tab 3",
-      content: (
-        <div>
-          <span>Inventory Optimization:</span> Take inventory planning to a
-          higher level with inventory optimization. Add sophistication to a
-          basic inventory plan. Instead of standard ordering formulas and a
-          basic ordering process, you can use tools that provide automated
-          reports, inventory trends and a view of changes across the entire
-          supply chain. This information enables a closer match in supply and
-          demand so you can optimize the inventory on-hand. See the inventory
-          forecasting guide to learn more.
-        </div>
-      )
     }
   ];
 
   // bg-red-900 sm:bg-yellow-400 md:bg-blue-400 lg:bg-teal-400 xl:bg-lime-400
   return (
     <div className="text-white">
-      <section className="w-full container mx-auto my-12 ">
-        <div className="px-12 h-fit w-full flex flex-col items-center sm:flex-row gap-7 ">
-          <div className="w-full ">
+      <section className="w-full min-h-[80vh] container mx-auto flex justify-center items-center ">
+        <div className="px-12 h-fit w-full flex flex-col items-center justify-center sm:flex-row gap-7 ">
+          <div className="w-full justify-center items-center ">
             <h3 className="text-7xl pb-5">
               Every order fulfilled,{" "}
               <span className="text-transparent font-normal bg-clip-text bg-gradient-to-r from-[#bc8ef1] via-[#442463] to-[#cc9cfc]">
@@ -90,20 +73,25 @@ function HomePage() {
               global brands to power fast-growing startups. In short, we make
               supply meet demand, and then help you grow both.
             </p>
-            <button className="bg-purple-400 p-4 my-3 rounded-xl" type="button">
+            <button
+              className="bg-purple-300 bg-gradient-to-t  via-[#f5bbaa] from-[#9376af]  p-4 my-3 rounded-xl"
+              type="button">
               View More
             </button>
           </div>
-          <div className="w-full flex  justify-center  ">
+          <div className="w-full flex justify-center  ">
             <div className=" w-[250px] h-[250px] bg-gradient-to-b from-[#bc8ef1] via-[#442463] to-[#cc9cfc] absolute rounded-full top-[10%] eft-[10%] translate-x-[50%] translate-y-[50%] blur-[60px] hover:transform hover:scale-100 hover:bg-yellow-300" />
             <img src={Img} alt="" className="w-fit relative z-10" />
           </div>
         </div>
       </section>
-      <ProblemPage />
-      {/* <FeaturesPage /> */}
+
       <AboutPage />
+      {/* review page */}
       <ReviewPage />
+      {/* target page */}
+      <ProblemPage />
+
       <TargetPage tabs={tabs} />
       <Cta />
     </div>

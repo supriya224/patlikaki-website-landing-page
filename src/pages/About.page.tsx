@@ -1,138 +1,131 @@
+/* eslint-disable react/function-component-definition */
+import React from "react";
 import { MainLayout } from "../layouts";
 
-/* eslint-disable prettier/prettier */
-function AboutPage() {
+const AboutPage: React.FC = () => {
   return (
     <MainLayout>
-      <section className="relative pt-16 bg-blueGray-50">
-        <div className="container mx-auto">
-          <div className="flex flex-wrap items-center">
-            <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
-              <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg border rounded-lg ">
-                <img
-                  alt="..."
-                  src="https://img.freepik.com/premium-vector/flat-design-inventory-control-concept-illustration-websites-landing-pages-mobile-applications-posters-banners_108061-774.jpg"
-                  className="w-fit align-middle rounded-t-lg"
-                />
-                <blockquote className="relative p-8 mb-4">
+      <section>
+        <div className="relative overflow-hidden bg-white">
+          <div aria-hidden="true" className="absolute inset-0">
+            <div className="absolute inset-0 mx-auto max-w-7xl overflow-hidden xl:px-8">
+              <img
+                src="https://visioniot.com/images/shelf-first.png"
+                alt=""
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+            <div className="absolute inset-0 bg-[#442463] bg-opacity-75" />
+            <div className="absolute inset-0  bg-gradient-to-t  from-[#f8d6cb]   " />
+          </div>
+
+          <section
+            aria-labelledby="sale-heading"
+            className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:max-w-none">
+              <h2
+                id="sale-heading"
+                className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+                Get 25% off during our one-time sale
+              </h2>
+              <p className="mx-auto mt-4 max-w-xl text-xl text-gray-600">
+                Most of our products are limited releases that won't come back.
+                Get your favorite items while they're in stock.
+              </p>
+              <a
+                href="/ "
+                className="mt-6 inline-block w-full rounded-md border border-transparent bg-black  px-8 py-3 font-medium text-white hover:bg-cyan-800 sm:w-auto">
+                Get access to our one-time sale
+              </a>
+            </div>
+          </section>
+
+          <section
+            aria-labelledby="testimonial-heading"
+            className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
+            <div className="mx-auto max-w-2xl lg:max-w-none">
+              <h2
+                id="testimonial-heading"
+                className="text-2xl font-bold tracking-tight text-gray-900">
+                What are people saying?
+              </h2>
+
+              <div className="mt-16 space-y-16 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
+                <blockquote className="sm:flex lg:block">
                   <svg
-                    preserveAspectRatio="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 583 95"
-                    className="absolute left-0 w-full block h-95-px -top-94-px">
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      className="text-pink-500 fill-current"
+                    width="24"
+                    height="18"
+                    viewBox="0 0 24 18"
+                    aria-hidden="true"
+                    className="flex-shrink-0 text-gray-300">
+                    <path
+                      d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z"
+                      fill="currentColor"
                     />
                   </svg>
-                  <h4 className="text-xl font-bold text-white">
-                    Great for your awesome project
-                  </h4>
-                  <p className="text-md font-light mt-2 text-white">
-                    Putting together a page has never been easier than matching
-                    together pre-made components. From landing pages
-                    presentation to login areas, you can easily customise and
-                    built your pages.
-                  </p>
+                  <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
+                    <p className="text-lg text-gray-600">
+                      My order arrived super quickly. The product is even better
+                      than I hoped it would be. Very happy customer over here!
+                    </p>
+                    <cite className="mt-4 block font-semibold not-italic text-gray-900">
+                      Shehab , England
+                    </cite>
+                  </div>
+                </blockquote>
+                <blockquote className="sm:flex lg:block">
+                  <svg
+                    width="24"
+                    height="18"
+                    viewBox="0 0 24 18"
+                    aria-hidden="true"
+                    className="flex-shrink-0 text-gray-300">
+                    <path
+                      d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
+                    <p className="text-lg text-gray-600">
+                      I had to return a purchase that didn’t fit. The whole
+                      process was so simple that I ended up ordering two new
+                      items!
+                    </p>
+                    <cite className="mt-4 block font-semibold not-italic text-gray-900">
+                      Najib, malaysia
+                    </cite>
+                  </div>
+                </blockquote>
+                <blockquote className="sm:flex lg:block">
+                  <svg
+                    width="24"
+                    height="18"
+                    viewBox="0 0 24 18"
+                    aria-hidden="true"
+                    className="flex-shrink-0 text-gray-300">
+                    <path
+                      d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
+                    <p className="text-lg text-gray-600">
+                      Now that I’m on holiday for the summer, I’ll probably
+                      order a few more shirts. It’s just so convenient, and I
+                      know the quality will always be there.
+                    </p>
+                    <cite className="mt-4 block font-semibold not-italic text-gray-900">
+                      Yousef, New York
+                    </cite>
+                  </div>
                 </blockquote>
               </div>
             </div>
-
-            <div className="w-full md:w-6/12 px-4">
-              <div className="flex flex-wrap">
-                <div className="w-full md:w-6/12 px-4">
-                  <div className="relative flex flex-col mt-4">
-                    <div className="px-4 py-5 flex-auto">
-                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                        <i className="fas fa-sitemap" />
-                      </div>
-                      <h6 className="text-xl mb-1 font-semibold">
-                        CSS Components
-                      </h6>
-                      <p className="mb-4 text-blueGray-500">
-                        Notus JS comes with a huge number of Fully Coded CSS
-                        components.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="relative flex flex-col min-w-0">
-                    <div className="px-4 py-5 flex-auto">
-                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                        <i className="fas fa-drafting-compass" />
-                      </div>
-                      <h6 className="text-xl mb-1 font-semibold">
-                        JavaScript Components
-                      </h6>
-                      <p className="mb-4 text-blueGray-500">
-                        We also feature many dynamic components for React,
-                        NextJS, Vue and Angular.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full md:w-6/12 px-4">
-                  <div className="relative flex flex-col min-w-0 mt-4">
-                    <div className="px-4 py-5 flex-auto">
-                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                        <i className="fas fa-newspaper" />
-                      </div>
-                      <h6 className="text-xl mb-1 font-semibold">Pages</h6>
-                      <p className="mb-4 text-blueGray-500">
-                        This extension also comes with 3 sample pages. They are
-                        fully coded so you can start working instantly.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="relative flex flex-col min-w-0">
-                    <div className="px-4 py-5 flex-auto">
-                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                        <i className="fas fa-file-alt" />
-                      </div>
-                      <h6 className="text-xl mb-1 font-semibold">
-                        Documentation
-                      </h6>
-                      <p className="mb-4 text-blueGray-500">
-                        Built by developers for developers. You will love how
-                        easy is to to work with Notus JS.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-        <footer className="relative bg-blueGray-50 pt-8 pb-6 mt-2">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap items-center md:justify-between justify-center">
-              <div className="w-full md:w-6/12 px-4 mx-auto text-center">
-                <div className="text-sm text-blueGray-500 font-semibold py-1">
-                  Made with{" "}
-                  <a
-                    href="https://www.creative-tim.com/product/notus-js"
-                    className="text-blueGray-500 hover:text-gray-800"
-                    target="_blank"
-                    rel="noreferrer">
-                    Notus JS
-                  </a>{" "}
-                  by{" "}
-                  <a
-                    href="https://www.creative-tim.com"
-                    className="text-blueGray-500 hover:text-blueGray-800"
-                    target="_blank"
-                    rel="noreferrer">
-                    {" "}
-                    Creative Tim
-                  </a>
-                  .
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </section>
     </MainLayout>
   );
-}
+};
 
 export default AboutPage;

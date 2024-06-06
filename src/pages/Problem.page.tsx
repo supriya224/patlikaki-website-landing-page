@@ -5,7 +5,7 @@ import React from "react";
 function ProblemPage() {
   return (
     <div>
-      <section className="pt-20 lg:pt-[120px] pb-10 lg:pb-20 text-black ">
+      <section className="py-12  text-black ">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full md:w-1/2 xl:w-1/3 px-4">
@@ -17,7 +17,7 @@ function ProblemPage() {
                   height={40}
                   className="w-full flex items-center justify-center"
                 />
-                <div className="p-8 bg-purple-400 sm:p-9 md:p-7 xl:p-9 text-center">
+                <div className="p-8 bg-purple-300 bg-gradient-to-t  from-[#f5bbaa]  sm:p-9 md:p-7 xl:p-9 text-center">
                   <h3>
                     <a
                       href="#"
@@ -65,7 +65,7 @@ function ProblemPage() {
                   alt="image"
                   className="w-full"
                 />
-                <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                <div className="p-8 bg-purple-300 bg-gradient-to-t  from-[#f5bbaa]   sm:p-9 md:p-7 xl:p-9 text-center">
                   <h3>
                     <a
                       href="#"
@@ -113,7 +113,7 @@ function ProblemPage() {
                   alt="image"
                   className="w-full"
                 />
-                <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                <div className="p-8 bg-purple-300 bg-gradient-to-t  from-[#f5bbaa]   sm:p-9 md:p-7 xl:p-9 text-center">
                   <h3>
                     <a
                       href="#"
