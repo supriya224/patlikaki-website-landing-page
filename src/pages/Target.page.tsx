@@ -1,6 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/function-component-definition */
+
+// this is tab section 
 import React, { useState } from "react";
 
 interface Tab {
@@ -17,7 +19,7 @@ const TargetPage: React.FC<TabsProps> = ({ tabs }) => {
 
   return (
     <section className="container mx-auto my-12">
-      <div className="w-full min-h-fit p-12  rounded-2xl shadow-inner  shadow-[#2e2538] ">
+      <div className="w-full min-h-fit p-12  rounded-2xl shadow-inner  shadow-[#2e2538] border-b ">
         <div className="flex justify-center gap-12 items-center border-b border-gray-200">
           {tabs.map((tab, index) => (
             <button

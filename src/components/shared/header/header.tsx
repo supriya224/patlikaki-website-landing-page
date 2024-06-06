@@ -6,7 +6,6 @@ import { useState } from "react";
 import { Menu, X } from "react-feather";
 import Img from "../../../assets/img.png";
 import { Link } from "react-router-dom";
-// import { Link, animateScroll as scroll } from "react-scroll";
 
 interface HeaderItem {
   title: string;
@@ -14,9 +13,6 @@ interface HeaderItem {
 }
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  // const scrollToTop = () => {
-  //   scroll.scrollToTop();
-  // };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -24,36 +20,34 @@ const Header: React.FC = () => {
 
   const header: HeaderItem[] = [
     { title: "Home", link: "/" },
-    { title: "Features", link: "/features" },
-    { title: "Review", link: "/review" },
-    { title: "CTA", link: "/cta" },
-    { title: "Feedback", link: "/feedback" }
+    { title: "About", link: "/" },
+    { title: "Review", link: "/" },
+    { title: "CTA", link: "/" },
+    { title: "Feedback", link: "/" }
   ];
 
   return (
     <header className="text-white ">
       <div className="container mx-auto flex justify-between text-center items-center p-3">
-        <img src={Img} alt="" className="w-16 h-16" />
+        <img src={Img} alt="" className="w-16 h-16" loading="lazy" />
 
         <div className="hidden lg:flex gap-4 text-md">
           {header.map((item, index) => (
             <ul key={index} className="flex">
               <Link to={item.link}>
-                {" "}
                 <li>{item.title}</li>
               </Link>
             </ul>
           ))}
         </div>
-        <div className="flex items-center text-white gap-5">
+        <div className="flex items-center text-white font-extrabold gap-5">
           <button
-            //  onClick={scrollToTop}
-            className=" font-normal  bg-purple-300 bg-gradient-to-b  from-[#f5bbaa]  p-3 rounded-lg "
+            className="  bg-purple-300 bg-gradient-to-b  from-[#f5bbaa]  p-3 rounded-lg "
             type="button">
             Login
           </button>
           <button
-            className=" font-normal bg-purple-300 bg-gradient-to-b  from-[#f5bbaa]   p-3 rounded-lg "
+            className=" bg-purple-300 bg-gradient-to-b  from-[#f5bbaa]   p-3 rounded-lg "
             type="button">
             Signup
           </button>

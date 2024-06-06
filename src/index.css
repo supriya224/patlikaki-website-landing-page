@@ -24,21 +24,15 @@ code {
 }
 @keyframes spin {
   0% {
-    content: "snaks";
+    content: "Inventory Management ";
   }
   20% {
-    content: "Namkin";
+    content: "with all";
   }
   40% {
-    content: "Kachori";
+    content: "in one";
   }
   60% {
-    content: "Traditional";
-  }
-  80% {
-    content: "Healthy Laddu's";
-  }
-  100% {
-    content: "Sweets";
+    content: "Solution";
   }
 }

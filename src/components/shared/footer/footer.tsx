@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
       <footer className="w-full text-gray-700 body-font">
         <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 xl:grid-cols-4 px-5 py-12 mx-auto md:grid-cols-2 ">
           <div className="px-4  md:text-left">
-            <img src={Img} alt="" className="w-28 h-28" />
+            <img src={Img} alt="" className="w-28 h-28" loading="lazy" />
             <p className="mt-2 text-sm text-gray-500 hover:text-zinc-300">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               modi dolor tenetur eos rerum voluptatum mollitia harum dicta atque
